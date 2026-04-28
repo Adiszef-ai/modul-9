@@ -1,0 +1,100 @@
+{
+  "version": "20260427_130845",
+  "created_at": "2026-04-27T13:08:45.076925",
+  "model_type": "LightGBM",
+  "features": {
+    "numeric": [
+      "age",
+      "hours_per_week"
+    ],
+    "categorical": [
+      "sex",
+      "education",
+      "occupation",
+      "marital_status",
+      "workclass"
+    ]
+  },
+  "categorical_values": {
+    "sex": [
+      "Kobieta",
+      "Mężczyzna"
+    ],
+    "education": [
+      "Doktorat",
+      "Gimnazjum (9 klasa)",
+      "Licencjat / Inżynier",
+      "Liceum (10 klasa)",
+      "Liceum (11 klasa)",
+      "Liceum (12 klasa)",
+      "Magister",
+      "Przedszkole",
+      "Studia niedokończone",
+      "Studia podyplomowe",
+      "Studium akademickie",
+      "Studium zawodowe",
+      "Szkoła podstawowa (1-4 klasa)",
+      "Szkoła podstawowa (5-6 klasa)",
+      "Szkoła podstawowa (7-8 klasa)",
+      "Szkoła średnia"
+    ],
+    "occupation": [
+      "Administracja biurowa",
+      "Inne usługi",
+      "Kierownictwo",
+      "Ochrona",
+      "Operator maszyn",
+      "Pomoc domowa",
+      "Rolnictwo / Rybołówstwo",
+      "Rzemiosło / Naprawy",
+      "Siły zbrojne",
+      "Specjalista",
+      "Sprzedaż",
+      "Sprzątanie / Obsługa",
+      "Transport",
+      "Wsparcie techniczne"
+    ],
+    "marital_status": [
+      "Kawaler / Panna",
+      "Rozwiedziony / Rozwiedziona",
+      "W separacji",
+      "W związku (małżonek nieobecny)",
+      "W związku z żołnierzem",
+      "Wdowiec / Wdowa",
+      "Żonaty / Zamężna"
+    ],
+    "workclass": [
+      "Administracja federalna",
+      "Administracja samorządowa",
+      "Administracja stanowa",
+      "Praca bez wynagrodzenia",
+      "Prywatna firma",
+      "Samozatrudnienie",
+      "Własna firma (zarejestrowana)"
+    ]
+  },
+  "numeric_ranges": {
+    "age": {
+      "min": 17.0,
+      "max": 90.0
+    },
+    "hours_per_week": {
+      "min": 1.0,
+      "max": 99.0
+    }
+  },
+  "target": {
+    "name": "income_above_50k",
+    "classes": {
+      "0": "<=50K",
+      "1": ">50K"
+    }
+  },
+  "metrics": {
+    "test_accuracy": 0.8054036134593071,
+    "test_f1": 0.6850858369098712,
+    "test_auc": 0.8993643728467979,
+    "cv_auc_mean": 0.8903943036329519,
+    "cv_auc_std": 0.004116758899233537
+  }
+}

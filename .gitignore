@@ -1,0 +1,19 @@
+# Environment — sekrety
+.env
+.env.local
+
+# Model binaries — duże pliki binarne, zarządzane przez MinIO
+models/*.pkl
+
+# Dataset UCI Adult — 4 MB, pobierasz osobno
+adult.csv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# System
+.DS_Store
+Thumbs.db
